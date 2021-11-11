@@ -8,7 +8,7 @@ var feedbackEl = document.querySelector("#feedback");
 
 
 var currentQuestionIndex = 0;
-var time = questions.length * 15;
+var time = 75;
 var timerId;
 
 function startQuiz() {
@@ -18,7 +18,6 @@ function startQuiz() {
 
   //shows questions section
   questionsEl.removeAttribute("class");
-
   //starts timer
   timerId = setInterval(clockTick, 1000);
 
